@@ -1,1 +1,19 @@
-console.log("Bozail website loaded.");
+document.addEventListener("DOMContentLoaded", () => {
+  // Scroll animation for fade-in and slide-up classes
+  const elements = document.querySelectorAll(".fade-in, .slide-up, .zoom-in");
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.1
+  });
+
+  elements.forEach(el => {
+    observer.observe(el);
+  });
+});

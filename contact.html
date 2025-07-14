@@ -1,42 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact | Bozail</title>
-  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div class="logo">Bozail</div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <section class="main-section">
-    <h1>Contact Us</h1>
-    <form class="contact-form" action="https://formspree.io/f/your-id" method="POST">
-      <label for="name">Your Name:</label>
-      <input type="text" name="name" required />
-      
-      <label for="email">Your Email:</label>
-      <input type="email" name="email" required />
-      
-      <label for="message">Message:</label>
-      <textarea name="message" rows="6" required></textarea>
+<header class="fade-in">
+  <div class="logo">Bozail</div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
+<section class="contact-section slide-up">
+  <h1>Get in Touch</h1>
+  <p>If you’re a buyer, supplier, or partner looking to do business with Bozail, fill out the form below and our trade team will reach out within 24 hours.</p>
 
-  <footer>
+  <form action="https://formspree.io/f/your-id" method="POST" class="contact-form">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <input type="text" name="company" placeholder="Company (optional)">
+    <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <div class="footer-content">
     <p>&copy; 2025 Bozail International. All rights reserved.</p>
-  </footer>
+    <p>info@bozail.com | LinkedIn | WhatsApp</p>
+  </div>
+</footer>
+
 </body>
 </html>
