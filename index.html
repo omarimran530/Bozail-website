@@ -10,6 +10,17 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
   <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+      padding: 0;
+      margin: 0;
+      background-color: #fff;
+      color: #222;
+    }
+    section {
+      padding: 4rem 2rem;
+    }
     .sticky-header {
       position: fixed;
       top: 0;
@@ -32,27 +43,47 @@
     .glass-footer {
       background-color: #111;
       color: #eee;
-      padding: 2rem 0;
+      padding: 3rem 2rem;
+      font-size: 0.9rem;
     }
     .glass-footer .footer-columns {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: 0 auto;
       gap: 2rem;
+    }
+    .glass-footer .footer-column {
+      flex: 1 1 200px;
+      min-width: 200px;
+    }
+    .glass-footer h4, .glass-footer h5 {
+      margin-bottom: 1rem;
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      color: #fff;
     }
     .glass-footer a {
       color: #eee;
       text-decoration: none;
-      margin-bottom: 0.5rem;
       display: block;
+      margin-bottom: 0.5rem;
+      transition: color 0.3s ease;
     }
     .glass-footer a:hover {
+      color: #cc0000;
       text-decoration: underline;
+    }
+    .glass-footer p {
+      margin-bottom: 0.5rem;
     }
     .legal {
       text-align: center;
-      margin-top: 1rem;
-      font-size: 0.9rem;
+      margin-top: 2rem;
+      font-size: 0.8rem;
       opacity: 0.6;
+      font-family: 'Inter', sans-serif;
     }
   </style>
 </head>
@@ -331,27 +362,27 @@
   </div>
 </section>
 
-<!-- ▸ Minimal dark footer with columns -->
+<!-- ▸ Improved footer from About page -->
 <footer class="glass-footer">
   <div class="footer-columns container">
-    <div>
+    <div class="footer-column">
       <h4>Bozail International</h4>
       <p>Reliable global trade in grains, minerals &amp; specialty commodities.</p>
+      <p>© 2025 Bozail. All rights reserved.</p>
     </div>
-    <div>
+    <div class="footer-column">
       <h5>Navigate</h5>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="products.html">Products</a>
       <a href="contact.html">Contact</a>
     </div>
-    <div>
+    <div class="footer-column">
       <h5>Contact</h5>
-      <p>Email&nbsp;:&nbsp;info@bozail.com</p>
-      <p>WhatsApp&nbsp;:&nbsp;+1&nbsp;(206)&nbsp;555‑8031</p>
+      <p>Email: info@bozail.com</p>
+      <p>WhatsApp: +1 (206) 555-8031</p>
     </div>
   </div>
-  <div class="legal container">© 2025 Bozail. All rights reserved.</div>
 </footer>
 
 <script src="js/script.js"></script>
