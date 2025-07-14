@@ -1,0 +1,1 @@
+console.log("Bozail website loaded.");
