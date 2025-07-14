@@ -11,212 +11,328 @@
 </head>
 <body>
 
-<div class="sticky-header">
-<header class="fade-in">
-  <div class="logo">Bozail</div>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="products.html">Products</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
+<header class="prime-header">
+  <!-- utility bar -->
+  <div class="util-bar">
+    <span>Global Commodity Solutions</span>
+    <a href="products.html" class="util-cta">Browse Products</a>
+  </div>
+
+  <!-- main bar -->
+  <div class="nav-wrap">
+    <a class="brand" href="index.html"><span class="red">Bo</span><span class="green">zail</span></a>
+
+    <nav class="desktop-menu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="products.html">Products</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <button class="burger" id="burger"><span></span><span></span><span></span></button>
+  </div>
+
+  <nav class="mobile-drawer" id="mobileDrawer">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="products.html">Products</a>
+    <a href="contact.html">Contact</a>
   </nav>
 </header>
-</div>
 
-<section class="hero">
-  <h1>Our Products</h1>
-  <p>Precision, quality, and consistency across our global inventory.</p>
+<section class="contact-hero">
+  <div class="hero-overlay">
+    <h1 class="fancy-heading">Contact Bozail</h1>
+    <p>Let’s move commodities together — reach our team 24 / 7.</p>
+  </div>
 </section>
+
+<!-- ▸ Products Hero -->
+<section class="products-hero">
+  <div class="hero-overlay">
+    <h1 class="fancy-heading">Products&nbsp;&amp;&nbsp;Solutions</h1>
+    <p>Your one‑stop gateway to grains, minerals &amp; energy commodities.</p>
+    <a href="#category-ribbon" class="cta-btn white">Browse Categories ↓</a>
+  </div>
+</section>
+
+<!-- ▸ Certifications strip -->
+<section class="certs" data-aos="fade-up">
+  <div class="container cert-grid">
+    <img src="assets/certs/iso.png"    alt="ISO 9001">
+    <img src="assets/certs/haccp.png"  alt="HACCP">
+    <img src="assets/certs/sgs.png"    alt="SGS">
+    <img src="assets/certs/intertek.png" alt="Intertek">
+  </div>
+</section>
+
+<!-- ▸ Category ribbon -->
+<nav id="category-ribbon" class="category-ribbon" data-aos="fade-right">
+  <ul>
+    <li><a href="#grains">Grains &amp; Pulses</a></li>
+    <li><a href="#minerals">Minerals &amp; Ores</a></li>
+    <li><a href="#energy">Energy Products</a></li>
+    <li><a href="#coming">High‑Tech Components</a></li>
+  </ul>
+</nav>
 
 <main style="padding: 2rem 1rem;">
-<section class="product-section slide-up" data-aos="fade-up">
-  <h2>Basmati Rice</h2>
-  <div class="product-card" style="background-color: #f9f9f9; border-radius: 8px; padding: 1rem;">
-    <div class="product-display">
-      <div class="image-container">
-        <img src="assets/basmati.jpg" alt="Basmati Rice">
+<section id="grains" class="product-grid">
+  <section class="product-section slide-up" data-aos="fade-up">
+    <h2>Basmati Rice</h2>
+    <article class="product-card" data-aos="fade-up">
+      <div class="card-top">
+        <div class="image-container"><img src="assets/basmati.jpg" alt="Basmati Rice"></div>
+        <h3>Basmati Rice</h3>
+        <button class="toggle-spec">View Specs</button>
       </div>
-      <table class="responsive-table">
-        <tr><th>Specification</th><th>Detail</th></tr>
-        <tr><td>Grain Length</td><td>8.3mm (avg)</td></tr>
-        <tr><td>Moisture Content</td><td>12% max</td></tr>
-        <tr><td>Purity</td><td>95–98%</td></tr>
-        <tr><td>Broken Ratio</td><td>1–2%</td></tr>
-        <tr><td>Packing</td><td>5kg | 25kg | 50kg bags</td></tr>
-        <tr><td>Origin</td><td>Pakistan / India</td></tr>
-      </table>
+      <div class="spec-body collapse">
+        <table class="responsive-table">
+          <tr><th>Specification</th><th>Detail</th></tr>
+          <tr><td>Grain Length</td><td>8.3mm (avg)</td></tr>
+          <tr><td>Moisture Content</td><td>12% max</td></tr>
+          <tr><td>Purity</td><td>95–98%</td></tr>
+          <tr><td>Broken Ratio</td><td>1–2%</td></tr>
+          <tr><td>Packing</td><td>5kg | 25kg | 50kg bags</td></tr>
+          <tr><td>Origin</td><td>Pakistan / India</td></tr>
+        </table>
+      </div>
+    </article>
+  </section>
+
+  <section class="product-section slide-up" data-aos="fade-up">
+    <h2>Soybeans / Soya</h2>
+    <article class="product-card" data-aos="fade-up">
+      <div class="card-top">
+        <div class="image-container"><img src="assets/soybeans.jpg" alt="Soybeans"></div>
+        <h3>Soybeans / Soya</h3>
+        <button class="toggle-spec">View Specs</button>
+      </div>
+      <div class="spec-body collapse">
+        <table class="responsive-table">
+          <tr><th>Specification</th><th>Detail</th></tr>
+          <tr><td>Grade</td><td>Non-GMO / GMO</td></tr>
+          <tr><td>Protein</td><td>38% minimum</td></tr>
+          <tr><td>Moisture</td><td>13% max</td></tr>
+          <tr><td>Purity</td><td>98%+</td></tr>
+        </table>
+      </div>
+    </article>
+  </section>
+
+  <section class="product-section slide-up" data-aos="fade-up">
+    <h2>Corn</h2>
+    <article class="product-card" data-aos="fade-up">
+      <div class="card-top">
+        <div class="image-container"><img src="assets/corn.jpg" alt="Corn"></div>
+        <h3>Corn</h3>
+        <button class="toggle-spec">View Specs</button>
+      </div>
+      <div class="spec-body collapse">
+        <table class="responsive-table">
+          <tr><th>Specification</th><th>Detail</th></tr>
+          <tr><td>Use</td><td>Animal Feed / Human Consumption</td></tr>
+          <tr><td>Moisture</td><td>14% max</td></tr>
+          <tr><td>Broken Kernels</td><td>&lt; 5%</td></tr>
+          <tr><td>Packing</td><td>Bulk or 50kg Bags</td></tr>
+        </table>
+      </div>
+    </article>
+  </section>
+
+  <section class="product-section slide-up" data-aos="fade-up">
+    <h2>Flour & Wheat</h2>
+    <article class="product-card" data-aos="fade-up">
+      <div class="card-top">
+        <div class="image-container"><img src="assets/flour-wheat.jpg" alt="Flour and Wheat"></div>
+        <h3>Flour & Wheat</h3>
+        <button class="toggle-spec">View Specs</button>
+      </div>
+      <div class="spec-body collapse">
+        <table class="responsive-table">
+          <tr><th>Specification</th><th>Detail</th></tr>
+          <tr><td>Types</td><td>All-purpose, Maida, Atta</td></tr>
+          <tr><td>Protein</td><td>10–12%</td></tr>
+          <tr><td>Moisture</td><td>&lt; 13%</td></tr>
+          <tr><td>Origin</td><td>Pakistan, India, Argentina</td></tr>
+        </table>
+      </div>
+    </article>
+  </section>
+
+  <section class="product-section slide-up" data-aos="fade-up">
+    <h2>Pulses & Beans</h2>
+    <article class="product-card" data-aos="fade-up">
+      <div class="card-top">
+        <div class="image-container"><img src="assets/pulses.jpg" alt="Beans and Pulses"></div>
+        <h3>Pulses & Beans</h3>
+        <button class="toggle-spec">View Specs</button>
+      </div>
+      <div class="spec-body collapse">
+        <table class="responsive-table">
+          <tr><th>Product</th><th>Specification</th></tr>
+          <tr><td>Chickpeas</td><td>Desi / Kabuli, 99% purity</td></tr>
+          <tr><td>Kidney Beans</td><td>Red / White, Moisture &lt;14%</td></tr>
+          <tr><td>Fava Beans</td><td>Whole, Moisture &lt;12%</td></tr>
+          <tr><td>Edamame</td><td>Frozen or Fresh, Food Grade</td></tr>
+          <tr><td>Lentils</td><td>Red / Brown / Split, Bulk or Retail</td></tr>
+        </table>
+      </div>
+    </article>
+  </section>
+</section><!-- /product-grid grains -->
+
+<section id="minerals" class="product-grid">
+  <section class="product-section slide-up" data-aos="fade-up">
+    <h2>Copper Ore</h2>
+    <article class="product-card" data-aos="fade-up">
+      <div class="card-top">
+        <div class="image-container"><img src="assets/copper.jpg" alt="Copper Ore"></div>
+        <h3>Copper Ore</h3>
+        <button class="toggle-spec">View Specs</button>
+      </div>
+      <div class="spec-body collapse">
+        <table class="responsive-table">
+          <tr><th>Specification</th><th>Detail</th></tr>
+          <tr><td>Cu Content</td><td>12% to 35%</td></tr>
+          <tr><td>Moisture</td><td>10% max</td></tr>
+          <tr><td>Impurities</td><td>Less than 1.5%</td></tr>
+          <tr><td>Granularity</td><td>0–20mm</td></tr>
+          <tr><td>Packing</td><td>Bulk or Jumbo Bags</td></tr>
+          <tr><td>Origin</td><td>DR Congo / Chile / Pakistan</td></tr>
+        </table>
+      </div>
+    </article>
+  </section>
+</section><!-- /product-grid minerals -->
+
+<section class="info-band" data-aos="fade-up">
+  <div class="container two-col">
+    <div>
+      <h2 class="fancy-heading">Why Traders Choose Bozail</h2>
+      <ul>
+        <li>SGS / Intertek inspection on request</li>
+        <li>End‑to‑end documentation &amp; LC support</li>
+        <li>Dedicated account managers in 3 time‑zones</li>
+      </ul>
+    </div>
+    <div>
+      <h2 class="fancy-heading">Quality Assurance</h2>
+      <p>Each shipment is tested against global standards for moisture, purity and contaminants before dispatch.</p>
     </div>
   </div>
 </section>
 
-<section class="product-section slide-up" data-aos="fade-up">
-  <h2>Copper Ore</h2>
-  <div class="product-card" style="background-color: #f9f9f9; border-radius: 8px; padding: 1rem;">
-    <div class="product-display">
-      <div class="image-container">
-        <img src="assets/copper.jpg" alt="Copper Ore">
+<section id="energy" class="product-grid">
+  <section class="product-section slide-up" data-aos="fade-up">
+    <h2>Petroleum Coke (Petcoke)</h2>
+    <article class="product-card" data-aos="fade-up">
+      <div class="card-top">
+        <div class="image-container"><img src="assets/petcoke.jpg" alt="Petroleum Coke"></div>
+        <h3>Petroleum Coke (Petcoke)</h3>
+        <button class="toggle-spec">View Specs</button>
       </div>
-      <table class="responsive-table">
-        <tr><th>Specification</th><th>Detail</th></tr>
-        <tr><td>Cu Content</td><td>12% to 35%</td></tr>
-        <tr><td>Moisture</td><td>10% max</td></tr>
-        <tr><td>Impurities</td><td>Less than 1.5%</td></tr>
-        <tr><td>Granularity</td><td>0–20mm</td></tr>
-        <tr><td>Packing</td><td>Bulk or Jumbo Bags</td></tr>
-        <tr><td>Origin</td><td>DR Congo / Chile / Pakistan</td></tr>
-      </table>
-    </div>
-  </div>
-</section>
-
-<section class="product-section slide-up" data-aos="fade-up">
-  <h2>Petroleum Coke (Petcoke)</h2>
-  <div class="product-card" style="background-color: #f9f9f9; border-radius: 8px; padding: 1rem;">
-    <div class="product-display">
-      <div class="image-container">
-        <img src="assets/petcoke.jpg" alt="Petroleum Coke">
+      <div class="spec-body collapse">
+        <table class="responsive-table">
+          <tr><th>Specification</th><th>Detail</th></tr>
+          <tr><td>Fixed Carbon</td><td>85–90%</td></tr>
+          <tr><td>Sulfur Content</td><td>1.5–3.5%</td></tr>
+          <tr><td>Moisture</td><td>&lt; 8%</td></tr>
+          <tr><td>Volatile Matter</td><td>10–15%</td></tr>
+          <tr><td>Packing</td><td>Loose in bulk or 1-ton jumbo bags</td></tr>
+          <tr><td>Application</td><td>Fuel-grade / Anode-grade</td></tr>
+        </table>
       </div>
-      <table class="responsive-table">
-        <tr><th>Specification</th><th>Detail</th></tr>
-        <tr><td>Fixed Carbon</td><td>85–90%</td></tr>
-        <tr><td>Sulfur Content</td><td>1.5–3.5%</td></tr>
-        <tr><td>Moisture</td><td>&lt; 8%</td></tr>
-        <tr><td>Volatile Matter</td><td>10–15%</td></tr>
-        <tr><td>Packing</td><td>Loose in bulk or 1-ton jumbo bags</td></tr>
-        <tr><td>Application</td><td>Fuel-grade / Anode-grade</td></tr>
-      </table>
-    </div>
-  </div>
-</section>
+    </article>
+  </section>
+</section><!-- /product-grid energy -->
 
-<section class="product-section slide-up" data-aos="fade-up">
-  <h2>Soybeans / Soya</h2>
-  <div class="product-card" style="background-color: #f9f9f9; border-radius: 8px; padding: 1rem;">
-    <div class="product-display">
-      <div class="image-container">
-        <img src="assets/soybeans.jpg" alt="Soybeans">
-      </div>
-      <table class="responsive-table">
-        <tr><th>Specification</th><th>Detail</th></tr>
-        <tr><td>Grade</td><td>Non-GMO / GMO</td></tr>
-        <tr><td>Protein</td><td>38% minimum</td></tr>
-        <tr><td>Moisture</td><td>13% max</td></tr>
-        <tr><td>Purity</td><td>98%+</td></tr>
-      </table>
-    </div>
-  </div>
-</section>
-
-<section class="product-section slide-up" data-aos="fade-up">
-  <h2>Corn</h2>
-  <div class="product-card" style="background-color: #f9f9f9; border-radius: 8px; padding: 1rem;">
-    <div class="product-display">
-      <div class="image-container">
-        <img src="assets/corn.jpg" alt="Corn">
-      </div>
-      <table class="responsive-table">
-        <tr><th>Specification</th><th>Detail</th></tr>
-        <tr><td>Use</td><td>Animal Feed / Human Consumption</td></tr>
-        <tr><td>Moisture</td><td>14% max</td></tr>
-        <tr><td>Broken Kernels</td><td>&lt; 5%</td></tr>
-        <tr><td>Packing</td><td>Bulk or 50kg Bags</td></tr>
-      </table>
-    </div>
-  </div>
-</section>
-
-<section class="product-section slide-up" data-aos="fade-up">
-  <h2>Flour & Wheat</h2>
-  <div class="product-card" style="background-color: #f9f9f9; border-radius: 8px; padding: 1rem;">
-    <div class="product-display">
-      <div class="image-container">
-        <img src="assets/flour.jpg" alt="Flour and Wheat">
-      </div>
-      <table class="responsive-table">
-        <tr><th>Specification</th><th>Detail</th></tr>
-        <tr><td>Types</td><td>All-purpose, Maida, Atta</td></tr>
-        <tr><td>Protein</td><td>10–12%</td></tr>
-        <tr><td>Moisture</td><td>&lt; 13%</td></tr>
-        <tr><td>Origin</td><td>Pakistan, India, Argentina</td></tr>
-      </table>
-    </div>
-  </div>
-</section>
-
-<section class="product-section slide-up" data-aos="fade-up">
-  <h2>Pulses & Beans</h2>
-  <div class="product-card" style="background-color: #f9f9f9; border-radius: 8px; padding: 1rem;">
-    <div class="product-display">
-      <div class="image-container">
-        <img src="assets/beans.jpg" alt="Beans and Pulses">
-      </div>
-      <table class="responsive-table">
-        <tr><th>Product</th><th>Specification</th></tr>
-        <tr><td>Chickpeas</td><td>Desi / Kabuli, 99% purity</td></tr>
-        <tr><td>Kidney Beans</td><td>Red / White, Moisture &lt;14%</td></tr>
-        <tr><td>Fava Beans</td><td>Whole, Moisture &lt;12%</td></tr>
-        <tr><td>Edamame</td><td>Frozen or Fresh, Food Grade</td></tr>
-        <tr><td>Lentils</td><td>Red / Brown / Split, Bulk or Retail</td></tr>
-      </table>
-    </div>
-  </div>
-</section>
-
-<section class="product-section slide-up" data-aos="fade-up">
-  <h2>Cocoa & Coffee Beans</h2>
-  <div class="product-card" style="background-color: #f9f9f9; border-radius: 8px; padding: 1rem;">
-    <div class="product-display">
-      <div class="image-container">
-        <img src="assets/coffee.jpg" alt="Coffee and Cocoa Beans">
-      </div>
-      <table class="responsive-table">
-        <tr><th>Specification</th><th>Detail</th></tr>
-        <tr><td>Types</td><td>Arabica / Robusta / Forastero</td></tr>
-        <tr><td>Processing</td><td>Raw / Roasted / Ground</td></tr>
-        <tr><td>Moisture</td><td>&lt; 13%</td></tr>
-        <tr><td>Origin</td><td>Colombia, Ethiopia, Ghana</td></tr>
-      </table>
-    </div>
-  </div>
-</section>
-
-<section class="product-section slide-up" data-aos="fade-up">
+<section id="coming" class="coming-soon" data-aos="fade-up">
   <h2>Coming Soon: Chipsets & High-Tech Components</h2>
   <p>We are expanding our network into microelectronics and semiconductors for regulated markets. Contact us for lead times and documentation.</p>
 </section>
 </main>
 
-<footer>
-  <div class="footer-grid">
-    <div>
-      <h3 style="font-family: 'Playfair Display', serif;">Bozail International</h3>
-      <p>Exporting trust. Importing opportunity.</p>
-    </div>
-    <div>
-      <h4 style="font-family: 'Playfair Display', serif;">Links</h4>
+<section class="contact-wrap">
+  <div class="container contact-grid">
+    <!-- left: inquiry form -->
+    <form action="mailto:info@bozail.com" method="post" enctype="text/plain" class="contact-form" data-aos="fade-right">
+      <h2>Send Us an Inquiry</h2>
+      <label>Name <input type="text" name="name" required></label>
+      <label>Email <input type="email" name="email" required></label>
+      <label>Phone <input type="tel" name="phone"></label>
+      <label>Message <textarea name="message" rows="5" required></textarea></label>
+      <button type="submit" class="cta-btn">Submit</button>
+    </form>
+
+    <!-- right: fast facts -->
+    <div class="contact-info" data-aos="fade-left">
+      <h2>Trade Hotline</h2>
+      <p><strong>Email:</strong> info@bozail.com</p>
+      <p><strong>WhatsApp:</strong> +1 (206) 555‑8031</p>
+      <h2>Our Services</h2>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li>24 h average response time</li>
+        <li>LC / SBLC documentation support</li>
+        <li>Global logistics coordination</li>
       </ul>
-    </div>
-    <div>
-      <h4 style="font-family: 'Playfair Display', serif;">Contact</h4>
-      <p>Email: info@bozail.com</p>
-      <p>WhatsApp: +1-234-567-8900</p>
+      <div class="contact-badge"><span><i class="fas fa-award"></i> ISO 9001 & SGS Verified</span></div>
     </div>
   </div>
-  <div class="footer-bottom">
-    <p>&copy; 2025 Bozail. All rights reserved.</p>
+</section>
+
+<section class="cta-dark" data-aos="zoom-in">
+  <h2>Need a custom commodity blend?</h2>
+  <a href="mailto:info@bozail.com" class="cta-btn">Talk to an Expert →</a>
+</section>
+
+<footer class="mega-footer">
+  <div class="footer-grid">
+    <div class="foot-col">
+      <h4>Bozail International</h4>
+      <p>Reliable global trade in grains, pulses and minerals.</p>
+    </div>
+    <div class="foot-col">
+      <h5>Navigate</h5>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="products.html">Products</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="foot-col">
+      <h5>Resources</h5>
+      <a href="products.html#grains">Grains &amp; Pulses</a>
+      <a href="products.html#minerals">Minerals &amp; Ores</a>
+      <a href="products.html#energy">Energy Products</a>
+    </div>
+    <div class="foot-col">
+      <h5>Contact</h5>
+      <p>Email&nbsp;:&nbsp;info@bozail.com</p>
+      <p>WhatsApp&nbsp;:&nbsp;+1 (206) 555‑8031</p>
+      <a href="https://linkedin.com">LinkedIn</a>
+    </div>
   </div>
+  <div class="legal">© 2025 Bozail. All rights reserved.</div>
 </footer>
 
 <script src="js/script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script>
   AOS.init({ duration: 1000 });
+</script>
+<script>
+const burger=document.getElementById('burger');
+const mobile=document.getElementById('mobileDrawer');
+burger?.addEventListener('click',()=>{burger.classList.toggle('open');mobile.classList.toggle('show')});
+</script>
+<script>
+document.querySelectorAll('.toggle-spec').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    const body = btn.parentElement.nextElementSibling;
+    body.classList.toggle('open');
+    btn.textContent = body.classList.contains('open') ? 'Hide Specs' : 'View Specs';
+  });
+});
 </script>
 </body>
 </html>

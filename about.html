@@ -14,26 +14,41 @@
     });
   </script>
 </head>
-<body style="background-color: #f9f9f9; font-family: 'Playfair Display', serif;">
+<body>
 
-<header class="main-header">
-  <div class="container">
-    <div class="logo">Bozail</div>
-    <nav class="nav-menu">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+<header class="prime-header">
+  <!-- utility bar -->
+  <div class="util-bar">
+    <span>Global Commodity Solutions</span>
+    <a href="products.html" class="util-cta">Browse Products</a>
   </div>
+
+  <!-- main nav bar -->
+  <div class="nav-wrap">
+    <a class="brand" href="index.html"><span class="red">Bo</span><span class="green">zail</span></a>
+
+    <nav class="desktop-menu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="products.html">Products</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <button class="burger" id="burger"><span></span><span></span><span></span></button>
+  </div>
+
+  <nav class="mobile-drawer" id="mobileDrawer">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="products.html">Products</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 </header>
 
-<section class="about-hero" data-aos="fade-in" style="font-family: 'Inter', sans-serif;">
-  <div class="hero-container">
-    <h1>About Bozail International</h1>
-    <p>Where experience meets efficiency in global trade and logistics.</p>
+<section class="about-hero">
+  <div class="hero-overlay">
+    <h1 class="fancy-heading">About&nbsp;Bozail</h1>
+    <p>Experience meets efficiency in global trade and logistics.</p>
   </div>
 </section>
 
@@ -88,33 +103,40 @@
   </div>
 </section>
 
-<footer>
+<footer class="mega-footer">
   <div class="footer-grid">
-    <div>
-      <h3>Bozail International</h3>
-      <p>Connecting continents through commerce.</p>
+    <div class="foot-col">
+      <h4>Bozail International</h4>
+      <p>Reliable global trade in grains, pulses and minerals.</p>
     </div>
-    <div>
-      <h4>Quick Links</h4>
-      <ul>
-        <li><a href="about.html">About</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+    <div class="foot-col">
+      <h5>Navigate</h5>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="products.html">Products</a>
+      <a href="contact.html">Contact</a>
     </div>
-    <div>
-      <h4>Contact</h4>
-      <address>
-        <p>Email: partners@bozail.com</p>
-        <p>WhatsApp: +1-234-567-8900</p>
-      </address>
+    <div class="foot-col">
+      <h5>Resources</h5>
+      <a href="products.html#grains">Grains &amp; Pulses</a>
+      <a href="products.html#minerals">Minerals &amp; Ores</a>
+      <a href="products.html#energy">Energy Products</a>
+    </div>
+    <div class="foot-col">
+      <h5>Contact</h5>
+      <p>Email&nbsp;:&nbsp;info@bozail.com</p>
+      <p>WhatsApp&nbsp;:&nbsp;+1&nbsp;(206)&nbsp;555-8031</p>
+      <a href="https://linkedin.com">LinkedIn</a>
     </div>
   </div>
-  <div class="footer-bottom">
-    <p>&copy; 2025 Bozail. All rights reserved.</p>
-  </div>
+  <div class="legal">© 2025 Bozail. All rights reserved.</div>
 </footer>
 
 <script src="js/script.js"></script>
+<script>
+  const burger=document.getElementById('burger');
+  const mobile=document.getElementById('mobileDrawer');
+  burger?.addEventListener('click',()=>{burger.classList.toggle('open');mobile.classList.toggle('show')});
+</script>
 </body>
 </html>

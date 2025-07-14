@@ -12,18 +12,29 @@
 </head>
 <body>
 
-<header class="main-header sticky-header">
-  <div class="container">
-    <div class="logo"><span style="color:#b22222;">Bo</span><span style="color:#228b22;">zail</span></div>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+<!-- ▸ Floating translucent header à‑la Apple / Cargill -->
+<header class="glass-header">
+  <div class="nav-wrap">
+    <a class="brand" href="index.html"><span class="red">Bo</span><span class="green">zail</span></a>
+
+    <nav class="desktop-menu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="products.html">Products</a>
+      <a href="contact.html">Contact</a>
     </nav>
+
+    <button class="burger" id="burger">
+      <span></span><span></span><span></span>
+    </button>
   </div>
+
+  <nav class="mobile-drawer" id="mobileDrawer">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="products.html">Products</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 </header>
 
 <section class="hero full-screen" style="background-image: url('assets/hero-bg.jpg');">
@@ -33,6 +44,32 @@
       <p class="fade-in">Bozail connects global buyers and trusted suppliers through verified logistics and market insight.</p>
       <a href="products.html" class="cta-btn">Explore Commodities</a>
     </div>
+  </div>
+</section>
+
+<!-- ▸ Solutions grid -->
+<section class="solutions-strip" data-aos="fade-up">
+  <div class="container solutions-grid">
+    <article class="sol-card">
+      <img src="assets/agri.jpg" alt="Agricultural Supply">
+      <h3>Agricultural Supply</h3>
+      <p>Rice, corn, beans, lentils &amp; specialty grains sourced directly from farms and cooperatives.</p>
+      <a href="products.html#grains" class="link-cta">Explore Grains</a>
+    </article>
+
+    <article class="sol-card">
+      <img src="assets/minerals.jpg" alt="Minerals & Ores">
+      <h3>Minerals &amp; Ores</h3>
+      <p>High‑grade copper ore, iron, chromite and more with full assay certificates.</p>
+      <a href="products.html#minerals" class="link-cta">Explore Minerals</a>
+    </article>
+
+    <article class="sol-card">
+      <img src="assets/energy.jpg" alt="Energy Products">
+      <h3>Energy Products</h3>
+      <p>Fuel‑grade petcoke and coal, shipped in bulk with end‑to‑end logistics.</p>
+      <a href="products.html#energy" class="link-cta">Explore Energy</a>
+    </article>
   </div>
 </section>
 
@@ -55,6 +92,17 @@
         <h3 class="fancy-heading">Smart Logistics</h3>
         <p>We handle shipping, warehousing, inspection, and documentation.</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ▸ Sustainability banner -->
+<section class="sustain-banner" data-aos="zoom-in">
+  <div class="sustain-overlay">
+    <div class="container">
+      <h2 class="fancy-heading">Sustainable Trade, Shared Prosperity</h2>
+      <p>We work with growers using eco‑friendly practices and miners adhering to ethical sourcing standards.</p>
+      <a href="about.html" class="cta-btn white">Our Commitment</a>
     </div>
   </div>
 </section>
@@ -103,6 +151,96 @@
   </div>
 </section>
 
+<!-- ▸ Latest insights -->
+<section class="insights" data-aos="fade-up">
+  <div class="container">
+    <h2 class="fancy-heading">Latest Insights</h2>
+    <div class="insight-grid">
+      <article class="insight-card">
+        <h4>2025 Grain Outlook</h4>
+        <p>Basmati prices steady as global demand rises 4 % YoY. Bozail expands sourcing in Punjab.</p>
+        <a href="#" class="link-cta">Read more</a>
+      </article>
+      <article class="insight-card">
+        <h4>EV Metals Demand</h4>
+        <p>Copper ore shipments to SE Asia expected to double by Q4. See our logistics advantage.</p>
+        <a href="#" class="link-cta">Read more</a>
+      </article>
+      <article class="insight-card">
+        <h4>Sustainable Petcoke</h4>
+        <p>New emissions‑compliant petcoke grades emerging for 2026 IMO standards.</p>
+        <a href="#" class="link-cta">Read more</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ▸ Trusted Partners -->
+<section class="partners" data-aos="fade-up">
+  <div class="container">
+    <h2 class="fancy-heading">Trusted By Industry Leaders</h2>
+    <div class="partner-row">
+      <img src="assets/partners/p1.png" alt="Partner 1">
+      <img src="assets/partners/p2.png" alt="Partner 2">
+      <img src="assets/partners/p3.png" alt="Partner 3">
+      <img src="assets/partners/p4.png" alt="Partner 4">
+      <img src="assets/partners/p5.png" alt="Partner 5">
+    </div>
+  </div>
+</section>
+
+<!-- ▸ Global map / footprint -->
+<section class="footprint" data-aos="fade-up">
+  <div class="container">
+    <h2 class="fancy-heading">Our Global Footprint</h2>
+    <img src="assets/world-map.png" alt="Bozail Export Map" class="map-img">
+    <p class="caption-sm">Offices &amp; partner warehouses in 18 countries · 12 major ports · 3M t annual throughput</p>
+  </div>
+</section>
+
+<!-- ▸ Case Studies -->
+<section class="case-studies" data-aos="fade-up">
+  <div class="container">
+    <h2 class="fancy-heading">Proven Track Record</h2>
+    <div class="case-grid">
+      <article class="case-card">
+        <h4>Rapid Rice Relief</h4>
+        <p>Delivered 25 K t of basmati rice to MENA in <strong>12 days</strong> amid port congestion.</p>
+      </article>
+      <article class="case-card">
+        <h4>Copper for EV Boom</h4>
+        <p>Secured 8 K t high‑grade Cu ore for SE‑Asian smelter with <strong>SGS verification</strong>.</p>
+      </article>
+      <article class="case-card">
+        <h4>Low‑Sulfur Petcoke</h4>
+        <p>Long‑term supply contract for IMO‑compliant petcoke, <strong>cutting emissions 18 %</strong>.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ▸ Certifications -->
+<section class="certs" data-aos="fade-up">
+  <div class="container cert-grid">
+    <div class="cert-card">
+      <img src="assets/certs/iso.png" alt="ISO 9001">
+      <p>ISO 9001 Quality Mgmt</p>
+    </div>
+    <div class="cert-card">
+      <img src="assets/certs/haccp.png" alt="HACCP">
+      <p>HACCP Food Safety</p>
+    </div>
+    <div class="cert-card">
+      <img src="assets/certs/sgs.png" alt="SGS">
+      <p>SGS Verified Shipments</p>
+    </div>
+    <div class="cert-card">
+      <img src="assets/certs/intertek.png" alt="Intertek">
+      <p>Intertek Cargo Inspections</p>
+    </div>
+  </div>
+</section>
+
 <section class="stats-bar">
   <div class="container stats-flex">
     <div class="stat-item" data-aos="zoom-in">
@@ -120,6 +258,28 @@
   </div>
 </section>
 
+<!-- ▸ FAQ -->
+<section class="faq" data-aos="fade-up">
+  <div class="container">
+    <h2 class="fancy-heading">Frequently Asked Questions</h2>
+
+    <details>
+      <summary>What are Bozail's minimum order quantities?</summary>
+      <p>Most commodities start at 20 t (one FCL). Smaller trial orders available on request.</p>
+    </details>
+
+    <details>
+      <summary>Can you handle all export documentation?</summary>
+      <p>Yes, we provide full commercial invoice, packing list, COO, Phyto, bill of lading, SGS/Intertek reports and more.</p>
+    </details>
+
+    <details>
+      <summary>Which payment terms do you accept?</summary>
+      <p>LC at sight, SBLC, CAD, and select escrow solutions for first‑time clients.</p>
+    </details>
+  </div>
+</section>
+
 <section class="cta-final">
   <div class="container" data-aos="fade-up">
     <h2 class="fancy-heading">Start Your Trade Journey With Us</h2>
@@ -128,29 +288,29 @@
   </div>
 </section>
 
-<footer class="main-footer">
-  <div class="container footer-grid">
-    <div class="footer-about">
-      <h3 class="fancy-heading">Bozail International</h3>
-      <p>Your trusted import/export partner for commodities and beyond.</p>
+<!-- ▸ Minimal dark footer with columns -->
+<footer class="glass-footer">
+  <div class="footer-columns">
+    <div>
+      <h4>Bozail International</h4>
+      <p>Reliable global trade in grains, minerals &amp; specialty commodities.</p>
     </div>
-    <div class="footer-links">
-      <h4>Quick Links</h4>
-      <ul>
-        <li><a href="about.html">About</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+
+    <div>
+      <h5>Navigate</h5>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="products.html">Products</a>
+      <a href="contact.html">Contact</a>
     </div>
-    <div class="footer-contact">
-      <h4>Contact</h4>
-      <p>Email: contact@tradewithbozail.com</p>
-      <p>WhatsApp: +1 (206) 555-8031</p>
+
+    <div>
+      <h5>Contact</h5>
+      <p>Email&nbsp;:&nbsp;info@bozail.com</p>
+      <p>WhatsApp&nbsp;:&nbsp;+1&nbsp;(206)&nbsp;555‑8031</p>
     </div>
   </div>
-  <div class="footer-bottom">
-    <p>&copy; 2025 Bozail. All rights reserved.</p>
-  </div>
+  <div class="legal">© 2025 Bozail. All rights reserved.</div>
 </footer>
 
 <script src="js/script.js"></script>
@@ -179,50 +339,11 @@
 </script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>AOS.init();</script>
-<style>
-  body {
-    font-family: 'Inter', sans-serif;
-    background-color: #fff;
-    color: #111;
-  }
-  .fancy-heading {
-    font-family: 'Playfair Display', serif;
-    font-weight: 700;
-    color: #b22222;
-  }
-  .logo {
-    font-family: 'Playfair Display', serif;
-    font-size: 28px;
-    font-weight: 700;
-  }
-  .product-specs {
-    list-style: none;
-    padding: 0;
-    margin: 10px 0 0;
-    font-size: 0.9rem;
-  }
-  .product-specs li {
-    margin-bottom: 4px;
-  }
-  .cta-btn {
-    background-color: #228b22;
-    color: white;
-    border: none;
-    padding: 10px 24px;
-    font-size: 1rem;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-  }
-  .cta-btn:hover {
-    background-color: #1e7e1e;
-  }
-  header.sticky-header {
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    background: white;
-    position: sticky;
-    top: 0;
-    z-index: 999;
-  }
-</style>
+
+<script>
+  const b = document.getElementById('burger');
+  const d = document.getElementById('mobileDrawer');
+  b?.addEventListener('click',()=>{b.classList.toggle('open');d.classList.toggle('show')});
+</script>
 </body>
 </html>

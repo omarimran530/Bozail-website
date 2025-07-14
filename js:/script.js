@@ -30,4 +30,45 @@ document.addEventListener("DOMContentLoaded", () => {
   scrollBtn.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
+
+  /* ─────────────────────────────────────────────
+     MOBILE BURGER MENU
+  ────────────────────────────────────────────── */
+  const burger = document.getElementById('burger');
+  const mobileDrawer = document.getElementById('mobileDrawer');
+  if (burger && mobileDrawer) {
+    burger.addEventListener('click', () => {
+      burger.classList.toggle('open');
+      mobileDrawer.classList.toggle('show');
+    });
+  }
+
+  /* ─────────────────────────────────────────────
+     ACCORDION SPEC SHEETS
+  ────────────────────────────────────────────── */
+  document.querySelectorAll('.toggle-spec').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const body = btn.closest('.product-card').querySelector('.spec-body');
+      body.classList.toggle('open');
+      btn.textContent = body.classList.contains('open') ? 'Hide Specs' : 'View Specs';
+    });
+  });
+
+  /* ─────────────────────────────────────────────
+     CATEGORY RIBBON SCROLL-SPY
+  ────────────────────────────────────────────── */
+  const spyLinks = document.querySelectorAll('.category-ribbon a');
+  const spySections = Array.from(spyLinks).map(link => document.querySelector(link.getAttribute('href')));
+  const spyObs = new IntersectionObserver(
+    entries => {
+      entries.forEach(entry => {
+        const idx = spySections.indexOf(entry.target);
+        if (idx >= 0) {
+          spyLinks[idx].classList.toggle('active', entry.isIntersecting);
+        }
+      });
+    },
+    { threshold: 0.5 }
+  );
+  spySections.forEach(sec => sec && spyObs.observe(sec));
 });
