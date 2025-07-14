@@ -22,16 +22,32 @@
 </header>
 
 <section class="contact-section slide-up">
-  <h1>Get in Touch</h1>
-  <p>If you’re a buyer, supplier, or partner looking to do business with Bozail, fill out the form below and our trade team will reach out within 24 hours.</p>
+  <div class="contact-intro">
+    <h1>Get in Touch</h1>
+    <p>If you’re a buyer, supplier, or partner looking to do business with Bozail, fill out the form below and our trade team will reach out within 24 hours.</p>
+  </div>
 
-  <form action="https://formspree.io/f/your-id" method="POST" class="contact-form">
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="email" placeholder="Your Email" required>
-    <input type="text" name="company" placeholder="Company (optional)">
-    <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
-    <button type="submit">Send Message</button>
-  </form>
+  <div class="contact-wrapper">
+    <div class="contact-form-container">
+      <form action="https://formspree.io/f/your-id" method="POST" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="text" name="company" placeholder="Company (optional)">
+        <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+        <button type="submit" class="cta-btn">Send Message</button>
+      </form>
+    </div>
+
+    <div class="contact-info">
+      <h2>Head Office</h2>
+      <p>Bozail International<br>123 Global Trade St, Suite 400<br>Seattle, WA, USA</p>
+
+      <h2>Support</h2>
+      <p>Email: <a href="mailto:info@bozail.com">info@bozail.com</a></p>
+      <p>Phone: +1 (555) 123-4567</p>
+      <p>WhatsApp: +1 (555) 765-4321</p>
+    </div>
+  </div>
 </section>
 
 <footer>
@@ -41,5 +57,6 @@
   </div>
 </footer>
 
+<script src="js/script.js"></script>
 </body>
 </html>
