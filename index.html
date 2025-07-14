@@ -9,26 +9,69 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <style>
+    .sticky-header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 999;
+      backdrop-filter: blur(12px);
+      background-color: rgba(255, 255, 255, 0.8);
+      box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s ease;
+    }
+    .desktop-menu a:hover {
+      color: #cc0000;
+    }
+    .nav-wrap.container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+    .glass-footer {
+      background-color: #111;
+      color: #eee;
+      padding: 2rem 0;
+    }
+    .glass-footer .footer-columns {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+    }
+    .glass-footer a {
+      color: #eee;
+      text-decoration: none;
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+    .glass-footer a:hover {
+      text-decoration: underline;
+    }
+    .legal {
+      text-align: center;
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      opacity: 0.6;
+    }
+  </style>
 </head>
 <body>
 
 <!-- ▸ Floating translucent header à‑la Apple / Cargill -->
-<header class="glass-header">
-  <div class="nav-wrap">
+<header class="glass-header sticky-header">
+  <div class="nav-wrap container">
     <a class="brand" href="index.html"><span class="red">Bo</span><span class="green">zail</span></a>
-
     <nav class="desktop-menu">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="products.html">Products</a>
       <a href="contact.html">Contact</a>
     </nav>
-
     <button class="burger" id="burger">
       <span></span><span></span><span></span>
     </button>
   </div>
-
   <nav class="mobile-drawer" id="mobileDrawer">
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
@@ -290,12 +333,11 @@
 
 <!-- ▸ Minimal dark footer with columns -->
 <footer class="glass-footer">
-  <div class="footer-columns">
+  <div class="footer-columns container">
     <div>
       <h4>Bozail International</h4>
       <p>Reliable global trade in grains, minerals &amp; specialty commodities.</p>
     </div>
-
     <div>
       <h5>Navigate</h5>
       <a href="index.html">Home</a>
@@ -303,14 +345,13 @@
       <a href="products.html">Products</a>
       <a href="contact.html">Contact</a>
     </div>
-
     <div>
       <h5>Contact</h5>
       <p>Email&nbsp;:&nbsp;info@bozail.com</p>
       <p>WhatsApp&nbsp;:&nbsp;+1&nbsp;(206)&nbsp;555‑8031</p>
     </div>
   </div>
-  <div class="legal">© 2025 Bozail. All rights reserved.</div>
+  <div class="legal container">© 2025 Bozail. All rights reserved.</div>
 </footer>
 
 <script src="js/script.js"></script>

@@ -45,27 +45,28 @@
   </nav>
 </header>
 
-<section class="about-hero">
-  <div class="hero-overlay">
-    <h1 class="fancy-heading">About&nbsp;Bozail</h1>
-    <p>Experience meets efficiency in global trade and logistics.</p>
+<section class="about-hero" style="background-image: url('assets/about-banner.jpg'); background-size: cover; background-position: center; height: 50vh; display: flex; align-items: center; justify-content: center; position: relative;">
+  <div style="position: absolute; top: 0; left: 0; height: 100%; width: 100%; background-color: rgba(0,0,0,0.5); z-index: 1;"></div>
+  <div class="hero-overlay" style="color: white; text-align: center; z-index: 2;">
+    <h1 class="fancy-heading" style="font-size: 3em;">About&nbsp;Bozail</h1>
+    <p style="font-size: 1.2em;">Experience meets efficiency in global trade and logistics.</p>
   </div>
 </section>
 
 <section class="company-story slide-up" data-aos="fade-up" style="font-family: 'Inter', sans-serif;">
-  <div class="company-container">
+  <div class="company-container" style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 2rem; padding: 2rem 10%;">
     <div class="company-text">
       <h2 style="color: #c0392b;">Our Story</h2>
       <p>Bozail International was founded to redefine import/export through speed, quality, and unmatched supplier networks.</p>
       <p>Our team has decades of experience sourcing agriculture and mineral products, aligning traditional trade methods with modern logistics and digital communication.</p>
     </div>
     <div class="company-image">
-      <img src="assets/about-story.jpg" alt="Bozail Story">
+      <img src="assets/about-story.jpg" alt="Bozail Story" style="border-radius: 12px; box-shadow: 0 6px 18px rgba(0,0,0,0.2); width: 100%; max-width: 500px;">
     </div>
   </div>
 </section>
 
-<section class="mission-values zoom-in" data-aos="fade-up" style="font-family: 'Inter', sans-serif;">
+<section class="mission-values zoom-in" data-aos="fade-up" style="font-family: 'Inter', sans-serif; background-color: #f9f9f9; padding: 4rem 10%;">
   <div class="values-container">
     <div class="mission">
       <h2 style="color: #196F3D;">Our Mission</h2>
@@ -82,51 +83,51 @@
   </div>
 </section>
 
-<section class="services-section" data-aos="fade-up" style="font-family: 'Inter', sans-serif;">
+<section class="services-section" data-aos="fade-up" style="padding: 4rem 10%; background-color: #fefefe;">
   <h2 style="text-align:center; color: #c0392b;">What We Offer</h2>
-  <div class="services-grid">
-    <div class="service-card" data-aos="zoom-in">
-      <img src="assets/sourcing.jpg" alt="Sourcing">
-      <h3>Global Sourcing</h3>
+  <div class="services-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-top: 2rem;">
+    <div class="service-card" data-aos="zoom-in" style="text-align: center; padding: 2rem; border: 1px solid #eee; border-radius: 12px; box-shadow: 0 6px 16px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+      <img src="assets/sourcing.jpg" alt="Sourcing" style="border-radius: 10px; max-width: 100%; height: auto;">
+      <h3 style="margin-top: 1rem;">Global Sourcing</h3>
       <p>We maintain strong supplier networks in Asia, Africa, and South America to ensure timely procurement of commodities like petcoke, copper ore, soybeans, and pulses.</p>
     </div>
-    <div class="service-card" data-aos="zoom-in">
-      <img src="assets/logistics.jpg" alt="Logistics">
-      <h3>Custom Logistics</h3>
+    <div class="service-card" data-aos="zoom-in" style="text-align: center; padding: 2rem; border: 1px solid #eee; border-radius: 12px; box-shadow: 0 6px 16px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+      <img src="assets/logistics.jpg" alt="Logistics" style="border-radius: 10px; max-width: 100%; height: auto;">
+      <h3 style="margin-top: 1rem;">Custom Logistics</h3>
       <p>Door-to-port and port-to-door service with verified freight providers, customs handlers, and tracking.</p>
     </div>
-    <div class="service-card" data-aos="zoom-in">
-      <img src="assets/consulting.jpg" alt="Consulting">
-      <h3>Bulk Trade Consulting</h3>
+    <div class="service-card" data-aos="zoom-in" style="text-align: center; padding: 2rem; border: 1px solid #eee; border-radius: 12px; box-shadow: 0 6px 16px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+      <img src="assets/consulting.jpg" alt="Consulting" style="border-radius: 10px; max-width: 100%; height: auto;">
+      <h3 style="margin-top: 1rem;">Bulk Trade Consulting</h3>
       <p>Whether you're a startup or an enterprise, we help structure and execute your first trade transaction from inquiry to execution.</p>
     </div>
   </div>
 </section>
 
-<footer class="mega-footer">
+<footer class="mega-footer" style="background-color: #222; color: #eee; padding: 3rem 10%;">
   <div class="footer-grid">
     <div class="foot-col">
-      <h4>Bozail International</h4>
+      <h4 style="color: #fff;">Bozail International</h4>
       <p>Reliable global trade in grains, pulses and minerals.</p>
     </div>
     <div class="foot-col">
-      <h5>Navigate</h5>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="products.html">Products</a>
-      <a href="contact.html">Contact</a>
+      <h5 style="color: #fff;">Navigate</h5>
+      <a href="index.html" style="color: #ccc; text-decoration: none; display: block; margin-bottom: 6px;">Home</a>
+      <a href="about.html" style="color: #ccc; text-decoration: none; display: block; margin-bottom: 6px;">About</a>
+      <a href="products.html" style="color: #ccc; text-decoration: none; display: block; margin-bottom: 6px;">Products</a>
+      <a href="contact.html" style="color: #ccc; text-decoration: none; display: block; margin-bottom: 6px;">Contact</a>
     </div>
     <div class="foot-col">
-      <h5>Resources</h5>
-      <a href="products.html#grains">Grains &amp; Pulses</a>
-      <a href="products.html#minerals">Minerals &amp; Ores</a>
-      <a href="products.html#energy">Energy Products</a>
+      <h5 style="color: #fff;">Resources</h5>
+      <a href="products.html#grains" style="color: #ccc; text-decoration: none; display: block; margin-bottom: 6px;">Grains &amp; Pulses</a>
+      <a href="products.html#minerals" style="color: #ccc; text-decoration: none; display: block; margin-bottom: 6px;">Minerals &amp; Ores</a>
+      <a href="products.html#energy" style="color: #ccc; text-decoration: none; display: block; margin-bottom: 6px;">Energy Products</a>
     </div>
     <div class="foot-col">
-      <h5>Contact</h5>
+      <h5 style="color: #fff;">Contact</h5>
       <p>Email&nbsp;:&nbsp;info@bozail.com</p>
       <p>WhatsApp&nbsp;:&nbsp;+1&nbsp;(206)&nbsp;555-8031</p>
-      <a href="https://linkedin.com">LinkedIn</a>
+      <a href="https://linkedin.com" style="color: #ccc; text-decoration: none; display: block; margin-bottom: 6px;">LinkedIn</a>
     </div>
   </div>
   <div class="legal">© 2025 Bozail. All rights reserved.</div>
