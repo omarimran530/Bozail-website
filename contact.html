@@ -11,16 +11,18 @@
 </head>
 <body>
 
-<header class="fade-in">
-  <div class="logo">Bozail</div>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="products.html">Products</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+<header class="apple-style-header">
+  <div class="nav-container">
+    <div class="logo">
+      <a href="index.html">Bozail</a>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="products.html">Products</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
 </header>
 
 <section class="contact-section slide-up" data-aos="fade-up">
@@ -81,23 +83,26 @@
     </div>
   </div>
 
-  <div class="map-container" data-aos="fade-up">
-    <h2>Our Office Location</h2>
-    <iframe 
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2689.510930802979!2d-122.33711668436903!3d47.60801397918514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54901545f5049a97%3A0x9fc3875e35c65c4a!2sSeattle%2C%20WA!5e0!3m2!1sen!2sus!4v1605663470113!5m2!1sen!2sus" 
-      width="100%" 
-      height="300" 
-      style="border:0;" 
-      allowfullscreen="" 
-      loading="lazy">
-    </iframe>
-  </div>
 </section>
 
-<footer>
-  <div class="footer-content">
-    <p>&copy; 2025 Bozail International. All rights reserved.</p>
-    <p>info@bozail.com | LinkedIn | WhatsApp</p>
+<footer class="footer-grid">
+  <div class="footer-column">
+    <h4>Bozail</h4>
+    <p>Global Trade & Sourcing</p>
+  </div>
+  <div class="footer-column">
+    <h4>Navigation</h4>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+  <div class="footer-column">
+    <h4>Contact</h4>
+    <p>Email: info@bozail.com</p>
+    <p>WhatsApp: +1 (555) 765-4321</p>
   </div>
 </footer>
 
@@ -109,7 +114,12 @@
 </body>
 </html>
 <!-- 
-  CSS class structure reference (to be styled in styles.css):
-    .contact-stats   // flex container for the stat cards
-    .stat-card       // each statistic block
+  CSS classes to add in styles.css:
+  .apple-style-header { background: white; position: sticky; top: 0; box-shadow: 0 1px 5px rgba(0,0,0,0.1); z-index: 1000; }
+  .nav-container { max-width: 1200px; margin: 0 auto; padding: 0.5rem 1rem; display: flex; justify-content: space-between; align-items: center; }
+  .nav-links a { margin: 0 1rem; text-decoration: none; color: #333; font-weight: 500; }
+  .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; background: #f9f9f9; padding: 2rem; font-size: 0.9rem; }
+  .footer-column h4 { margin-bottom: 0.5rem; }
+  .footer-column ul { list-style: none; padding: 0; }
+  .footer-column ul li { margin-bottom: 0.3rem; }
 -->

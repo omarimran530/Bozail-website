@@ -6,6 +6,7 @@
   <title>Bozail | Global Trade Reimagined</title>
   <link rel="stylesheet" href="css/styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 </head>
@@ -13,7 +14,7 @@
 
 <header class="main-header sticky-header">
   <div class="container">
-    <div class="logo">Bozail</div>
+    <div class="logo"><span style="color:#b22222;">Bo</span><span style="color:#228b22;">zail</span></div>
     <nav>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
@@ -28,7 +29,7 @@
 <section class="hero full-screen" style="background-image: url('assets/hero-bg.jpg');">
   <div class="hero-overlay">
     <div class="hero-text">
-      <h1 class="slide-in">Trade Without Borders</h1>
+      <h1 class="fancy-heading slide-in">Trade Without Borders</h1>
       <p class="fade-in">Bozail connects global buyers and trusted suppliers through verified logistics and market insight.</p>
       <a href="products.html" class="cta-btn">Explore Commodities</a>
     </div>
@@ -37,21 +38,21 @@
 
 <section class="section-features">
   <div class="container">
-    <h2 class="section-title">What Makes Us Different</h2>
+    <h2 class="fancy-heading section-title">What Makes Us Different</h2>
     <div class="features-grid">
       <div class="feature-card" data-aos="fade-up">
         <img src="assets/global.svg" alt="Global Network">
-        <h3>Global Network</h3>
+        <h3 class="fancy-heading">Global Network</h3>
         <p>We partner with 100+ trusted clients and brokers worldwide.</p>
       </div>
       <div class="feature-card" data-aos="fade-up">
         <img src="assets/verified.svg" alt="Verified Fulfillment">
-        <h3>Verified Fulfillment</h3>
+        <h3 class="fancy-heading">Verified Fulfillment</h3>
         <p>Transparent pricing, real-time commodity tracking, and quality checks.</p>
       </div>
       <div class="feature-card" data-aos="fade-up">
         <img src="assets/logistics.svg" alt="Logistics">
-        <h3>Smart Logistics</h3>
+        <h3 class="fancy-heading">Smart Logistics</h3>
         <p>We handle shipping, warehousing, inspection, and documentation.</p>
       </div>
     </div>
@@ -60,23 +61,38 @@
 
 <section class="carousel-products">
   <div class="container">
-    <h2 class="section-title">Top Traded Commodities</h2>
+    <h2 class="fancy-heading section-title">Top Traded Commodities</h2>
     <div class="swiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <img src="assets/basmati.jpg" alt="Basmati Rice" />
           <h4>Basmati Rice</h4>
           <p>Aromatic aged long-grain rice, perfect for high-end buyers and wholesalers.</p>
+          <ul class="product-specs">
+            <li>Grade: Aged Premium</li>
+            <li>Packaging: 50kg Bags</li>
+            <li>Origin: Punjab, Pakistan</li>
+          </ul>
         </div>
         <div class="swiper-slide">
           <img src="assets/copper.jpg" alt="Copper Ore" />
           <h4>Copper Ore</h4>
           <p>Customizable Cu% content for industrial and commodity traders.</p>
+          <ul class="product-specs">
+            <li>Grade: Industrial Grade</li>
+            <li>Packaging: Bulk Shipment</li>
+            <li>Origin: Chile</li>
+          </ul>
         </div>
         <div class="swiper-slide">
           <img src="assets/petcoke.jpg" alt="Petroleum Coke" />
           <h4>Petroleum Coke</h4>
           <p>Fuel-grade and anode-grade coke for global refiners and producers.</p>
+          <ul class="product-specs">
+            <li>Grade: Fuel & Anode</li>
+            <li>Packaging: Jumbo Bags</li>
+            <li>Origin: USA</li>
+          </ul>
         </div>
       </div>
       <div class="swiper-pagination"></div>
@@ -106,7 +122,7 @@
 
 <section class="cta-final">
   <div class="container" data-aos="fade-up">
-    <h2>Start Your Trade Journey With Us</h2>
+    <h2 class="fancy-heading">Start Your Trade Journey With Us</h2>
     <p>Contact us directly to receive quotes, documents, and onboarding materials.</p>
     <a href="contact.html" class="cta-btn">Contact Bozail</a>
   </div>
@@ -115,7 +131,7 @@
 <footer class="main-footer">
   <div class="container footer-grid">
     <div class="footer-about">
-      <h3>Bozail International</h3>
+      <h3 class="fancy-heading">Bozail International</h3>
       <p>Your trusted import/export partner for commodities and beyond.</p>
     </div>
     <div class="footer-links">
@@ -163,5 +179,50 @@
 </script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>AOS.init();</script>
+<style>
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: #fff;
+    color: #111;
+  }
+  .fancy-heading {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: #b22222;
+  }
+  .logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 700;
+  }
+  .product-specs {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    font-size: 0.9rem;
+  }
+  .product-specs li {
+    margin-bottom: 4px;
+  }
+  .cta-btn {
+    background-color: #228b22;
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  .cta-btn:hover {
+    background-color: #1e7e1e;
+  }
+  header.sticky-header {
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+</style>
 </body>
 </html>
