@@ -1,109 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bozail International | Global Trade & Supply</title>
-  <link rel="stylesheet" href="css/styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bozail | Global Trade Reimagined</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 </head>
 <body>
 
-<header class="fade-in">
-  <div class="logo">Bozail</div>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="products.html">Products</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+<header class="main-header sticky-header">
+  <div class="container">
+    <div class="logo">Bozail</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
 
-<section class="hero">
+<section class="hero full-screen" style="background-image: url('assets/hero-bg.jpg');">
   <div class="hero-overlay">
-    <div class="hero-content fade-in">
-      <h1>Bozail International</h1>
-      <p>Premium import/export solutions in grains, minerals, and tech components</p>
-      <a href="products.html" class="cta-btn">Browse Products</a>
+    <div class="hero-text">
+      <h1 class="slide-in">Trade Without Borders</h1>
+      <p class="fade-in">Bozail connects global buyers and trusted suppliers through verified logistics and market insight.</p>
+      <a href="products.html" class="cta-btn">Explore Commodities</a>
     </div>
   </div>
 </section>
 
-<section class="features slide-up">
-  <h2>Why Choose Us?</h2>
-  <div class="feature-cards">
-    <div class="feature-card">
-      <img src="assets/global.svg" alt="Global" />
-      <h3>Global Presence</h3>
-      <p>Trusted partners across 20+ countries ensure timely, secure trade.</p>
-    </div>
-    <div class="feature-card">
-      <img src="assets/supply.svg" alt="Verified Supply" />
-      <h3>Verified Supply Chain</h3>
-      <p>Rigorous supplier checks guarantee only the finest goods reach you.</p>
-    </div>
-    <div class="feature-card">
-      <img src="assets/logistics.svg" alt="Logistics" />
-      <h3>Streamlined Logistics</h3>
-      <p>We handle customs, freight, and compliance with end-to-end support.</p>
+<section class="section-features">
+  <div class="container">
+    <h2 class="section-title">What Makes Us Different</h2>
+    <div class="features-grid">
+      <div class="feature-card" data-aos="fade-up">
+        <img src="assets/global.svg" alt="Global Network">
+        <h3>Global Network</h3>
+        <p>We partner with 100+ trusted clients and brokers worldwide.</p>
+      </div>
+      <div class="feature-card" data-aos="fade-up">
+        <img src="assets/verified.svg" alt="Verified Fulfillment">
+        <h3>Verified Fulfillment</h3>
+        <p>Transparent pricing, real-time commodity tracking, and quality checks.</p>
+      </div>
+      <div class="feature-card" data-aos="fade-up">
+        <img src="assets/logistics.svg" alt="Logistics">
+        <h3>Smart Logistics</h3>
+        <p>We handle shipping, warehousing, inspection, and documentation.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="intro-products slide-up">
-  <h2>Flagship Products</h2>
-  <div class="product-gallery">
-    <div class="product-card">
-      <img src="assets/basmati.jpg" alt="Basmati Rice">
-      <h4>Basmati Rice</h4>
-      <p>Super-premium aged long-grain rice—ideal for culinary excellence.</p>
+<section class="carousel-products">
+  <div class="container">
+    <h2 class="section-title">Top Traded Commodities</h2>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="assets/basmati.jpg" alt="Basmati Rice" />
+          <h4>Basmati Rice</h4>
+          <p>Aromatic aged long-grain rice, perfect for high-end buyers and wholesalers.</p>
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/copper.jpg" alt="Copper Ore" />
+          <h4>Copper Ore</h4>
+          <p>Customizable Cu% content for industrial and commodity traders.</p>
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/petcoke.jpg" alt="Petroleum Coke" />
+          <h4>Petroleum Coke</h4>
+          <p>Fuel-grade and anode-grade coke for global refiners and producers.</p>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
     </div>
-    <div class="product-card">
-      <img src="assets/copper.jpg" alt="Copper Ore">
-      <h4>Copper Ore</h4>
-      <p>High-grade ore for industrial and manufacturing-grade usage.</p>
+    <div class="cta-center">
+      <a href="products.html" class="cta-btn">See All Products</a>
     </div>
-    <div class="product-card">
-      <img src="assets/petcoke.jpg" alt="Petroleum Coke">
-      <h4>Petroleum Coke</h4>
-      <p>Industrial-grade energy fuel—anode and fuel-grade pet coke.</p>
-    </div>
-  </div>
-  <div class="cta-center">
-    <a href="products.html" class="cta-btn">View Full Catalog</a>
   </div>
 </section>
 
-<section class="stats-bar zoom-in">
-  <div class="stat">
-    <strong>24+</strong>
-    <span>Global Clients</span>
-  </div>
-  <div class="stat">
-    <strong>3M+</strong>
-    <span>Tons Shipped</span>
-  </div>
-  <div class="stat">
-    <strong>99.2%</strong>
-    <span>Fulfillment Rate</span>
+<section class="stats-bar">
+  <div class="container stats-flex">
+    <div class="stat-item" data-aos="zoom-in">
+      <strong>24+</strong>
+      <span>Partner Nations</span>
+    </div>
+    <div class="stat-item" data-aos="zoom-in">
+      <strong>3M+</strong>
+      <span>Metric Tons Traded</span>
+    </div>
+    <div class="stat-item" data-aos="zoom-in">
+      <strong>99.8%</strong>
+      <span>Client Satisfaction</span>
+    </div>
   </div>
 </section>
 
-<section class="cta-banner slide-up">
-  <h2>Ready to Start Trading?</h2>
-  <p>Let our team build the bridge between you and the world’s finest suppliers.</p>
-  <a href="contact.html" class="cta-btn">Get in Touch</a>
+<section class="cta-final">
+  <div class="container" data-aos="fade-up">
+    <h2>Start Your Trade Journey With Us</h2>
+    <p>Contact us directly to receive quotes, documents, and onboarding materials.</p>
+    <a href="contact.html" class="cta-btn">Contact Bozail</a>
+  </div>
 </section>
 
-<footer>
-  <div class="footer-grid">
-    <div>
+<footer class="main-footer">
+  <div class="container footer-grid">
+    <div class="footer-about">
       <h3>Bozail International</h3>
-      <p>Connecting continents through commerce.</p>
+      <p>Your trusted import/export partner for commodities and beyond.</p>
     </div>
-    <div>
+    <div class="footer-links">
       <h4>Quick Links</h4>
       <ul>
         <li><a href="about.html">About</a></li>
@@ -111,10 +126,10 @@
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>
-    <div>
+    <div class="footer-contact">
       <h4>Contact</h4>
-      <p>Email: info@bozail.com</p>
-      <p>WhatsApp: +1-234-567-8900</p>
+      <p>Email: contact@tradewithbozail.com</p>
+      <p>WhatsApp: +1 (206) 555-8031</p>
     </div>
   </div>
   <div class="footer-bottom">
@@ -123,5 +138,30 @@
 </footer>
 
 <script src="js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper('.swiper', {
+    loop: true,
+    autoplay: {
+      delay: 3000,
+    },
+    slidesPerView: 1,
+    spaceBetween: 30,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      }
+    }
+  });
+</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
 </body>
 </html>

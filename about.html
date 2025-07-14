@@ -6,8 +6,15 @@
   <title>About | Bozail International</title>
   <link rel="stylesheet" href="css/styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      AOS.init();
+    });
+  </script>
 </head>
-<body>
+<body style="background-color: #f9f9f9; font-family: 'Inter', sans-serif;">
 
 <header class="fade-in">
   <div class="logo">Bozail</div>
@@ -21,61 +28,69 @@
   </nav>
 </header>
 
-<section class="about-hero">
-  <h1>About Bozail International</h1>
-  <p>Where experience meets efficiency in global trade and logistics.</p>
-</section>
-
-<section class="company-story slide-up">
-  <div class="text">
-    <h2>Our Story</h2>
-    <p>Bozail International was founded on a singular goal: to redefine import/export by eliminating friction, ensuring quality, and bridging global suppliers with premium buyers.</p>
-    <p>With experience in trade, compliance, and tech integration, we bring together traditional business acumen with digital agility.</p>
-  </div>
-  <div class="image">
-    <img src="assets/about-story.jpg" alt="Our Team">
+<section class="about-hero" data-aos="fade-in">
+  <div class="hero-container">
+    <h1>About Bozail International</h1>
+    <p>Where experience meets efficiency in global trade and logistics.</p>
   </div>
 </section>
 
-<section class="mission-values zoom-in">
-  <div>
-    <h2>Our Mission</h2>
-    <p>To become the most trusted trade partner across the globe, delivering timely and transparent solutions in commodities, minerals, and technology goods.</p>
-  </div>
-  <div>
-    <h2>Our Values</h2>
-    <ul>
-      <li><strong>Integrity:</strong> We trade with transparency.</li>
-      <li><strong>Innovation:</strong> We adapt with market dynamics.</li>
-      <li><strong>Reliability:</strong> We deliver what we promise.</li>
-    </ul>
+<section class="company-story slide-up" data-aos="fade-up">
+  <div class="company-container">
+    <div class="company-text">
+      <h2 style="color: #c0392b;">Our Story</h2>
+      <p>Bozail International was founded on a singular goal: to redefine import/export by eliminating friction, ensuring quality, and bridging global suppliers with premium buyers.</p>
+      <p>With experience in trade, compliance, and tech integration, we bring together traditional business acumen with digital agility.</p>
+    </div>
+    <div class="company-image">
+      <img src="assets/about-story.jpg" alt="Our Team">
+    </div>
   </div>
 </section>
 
-<section class="stats-bar fade-in">
-  <div class="stat">
-    <strong>35+</strong>
-    <span>Markets Served</span>
-  </div>
-  <div class="stat">
-    <strong>150+</strong>
-    <span>Clients Worldwide</span>
-  </div>
-  <div class="stat">
-    <strong>99%</strong>
-    <span>Repeat Orders</span>
+<section class="mission-values zoom-in" data-aos="fade-up">
+  <div class="values-container">
+    <div class="mission">
+      <h2 style="color: #196F3D;">Our Mission</h2>
+      <p>To become the most trusted trade partner across the globe, delivering timely and transparent solutions in commodities, minerals, and technology goods.</p>
+    </div>
+    <div class="values">
+      <h2 style="color: #196F3D;">Our Values</h2>
+      <ul>
+        <li><strong>Integrity:</strong> We trade with transparency.</li>
+        <li><strong>Innovation:</strong> We adapt with market dynamics.</li>
+        <li><strong>Reliability:</strong> We deliver what we promise.</li>
+      </ul>
+    </div>
   </div>
 </section>
 
-<section class="team-intro slide-up">
-  <h2>Our Leadership</h2>
+<section class="stats-bar fade-in" data-aos="fade-in">
+  <div class="stats-container">
+    <div class="stat">
+      <strong>35+</strong>
+      <span>Markets Served</span>
+    </div>
+    <div class="stat">
+      <strong>150+</strong>
+      <span>Clients Worldwide</span>
+    </div>
+    <div class="stat">
+      <strong>99%</strong>
+      <span>Repeat Orders</span>
+    </div>
+  </div>
+</section>
+
+<section class="team-intro slide-up" data-aos="fade-up">
+  <h2 style="color: #c0392b;">Our Leadership</h2>
   <div class="team-grid">
-    <div class="team-card">
+    <div class="team-card" data-aos="zoom-in">
       <img src="assets/omar.jpg" alt="Omar Imran">
       <h4>Omar Imran</h4>
       <p>Founder & Chief Strategist</p>
     </div>
-    <div class="team-card">
+    <div class="team-card" data-aos="zoom-in">
       <img src="assets/father.jpg" alt="Trade Director">
       <h4>Mr. Yusufzai</h4>
       <p>Global Trade Director</p>
@@ -99,8 +114,10 @@
     </div>
     <div>
       <h4>Contact</h4>
-      <p>Email: info@bozail.com</p>
-      <p>WhatsApp: +1-234-567-8900</p>
+      <address>
+        <p>Email: partners@bozail.com</p>
+        <p>WhatsApp: +1-234-567-8900</p>
+      </address>
     </div>
   </div>
   <div class="footer-bottom">
