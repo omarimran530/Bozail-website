@@ -5,24 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact | Bozail</title>
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/modern-header-footer.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 </head>
 <body>
 
-<header class="apple-style-header">
-  <div class="nav-container">
-    <div class="logo">
-      <a href="index.html">Bozail</a>
-    </div>
-    <nav class="nav-links">
+<header class="prime-header">
+  <div class="nav-wrap">
+    <a class="brand" href="index.html"><span class="red">Bo</span><span class="green">zail</span></a>
+    <nav class="desktop-menu">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="products.html">Products</a>
       <a href="contact.html" class="active">Contact</a>
     </nav>
+    <button class="burger" id="burger">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </header>
 
@@ -86,30 +86,33 @@
 
 </section>
 
-<footer class="footer-enhanced">
-  <div class="footer-container">
-    <div class="footer-logo">
-      <h3>Bozail</h3>
-      <p>Global Trade & Sourcing Experts</p>
+<footer class="mega-footer">
+  <div class="footer-grid">
+    <div class="foot-col">
+      <h4>Bozail International</h4>
+      <p>Reliable global trade in grains, pulses and minerals.</p>
     </div>
-    <div class="footer-links">
-      <h4>Explore</h4>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+    <div class="foot-col">
+      <h5>Navigate</h5>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="products.html">Products</a>
+      <a href="contact.html">Contact</a>
     </div>
-    <div class="footer-contact">
-      <h4>Connect</h4>
-      <p><i class="fas fa-envelope"></i> info@bozail.com</p>
-      <p><i class="fab fa-whatsapp"></i> +1 (555) 765-4321</p>
+    <div class="foot-col">
+      <h5>Resources</h5>
+      <a href="products.html#grains">Grains &amp; Pulses</a>
+      <a href="products.html#minerals">Minerals &amp; Ores</a>
+      <a href="products.html#energy">Energy Products</a>
+    </div>
+    <div class="foot-col">
+      <h5>Contact</h5>
+      <p>Email&nbsp;:&nbsp;info@bozail.com</p>
+      <p>WhatsApp&nbsp;:&nbsp;+1&nbsp;(206)&nbsp;555-8031</p>
+      <a href="https://linkedin.com">LinkedIn</a>
     </div>
   </div>
-  <div class="footer-bottom">
-    <p>&copy; 2025 Bozail LLC. All rights reserved.</p>
-  </div>
+  <div class="legal">© 2025 Bozail. All rights reserved.</div>
 </footer>
 
 <script src="js/script.js"></script>
@@ -117,15 +120,6 @@
 <script>
   AOS.init({ duration: 1000 });
 </script>
+
 </body>
 </html>
-<!-- 
-  CSS classes to add in styles.css:
-  .apple-style-header { background: white; position: sticky; top: 0; box-shadow: 0 1px 5px rgba(0,0,0,0.1); z-index: 1000; }
-  .nav-container { max-width: 1200px; margin: 0 auto; padding: 0.5rem 1rem; display: flex; justify-content: space-between; align-items: center; }
-  .nav-links a { margin: 0 1rem; text-decoration: none; color: #333; font-weight: 500; }
-  .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; background: #f9f9f9; padding: 2rem; font-size: 0.9rem; }
-  .footer-column h4 { margin-bottom: 0.5rem; }
-  .footer-column ul { list-style: none; padding: 0; }
-  .footer-column ul li { margin-bottom: 0.3rem; }
--->

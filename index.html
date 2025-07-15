@@ -14,7 +14,7 @@
       font-family: 'Inter', sans-serif;
       line-height: 1.6;
       padding: 0;
-      margin: 0;
+      margin: 0px;
       background-color: #fff;
       color: #222;
     }
@@ -23,6 +23,9 @@
     }
     .sticky-header {
       position: fixed;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
       top: 0;
       width: 100%;
       z-index: 999;
@@ -30,8 +33,11 @@
       background-color: rgba(255, 255, 255, 0.8);
       box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
       transition: background-color 0.3s ease;
+      padding: 1rem 2rem;
     }
     .desktop-menu a:hover {
+      transition: color 0.3s ease;
+      text-decoration: none;
       color: #cc0000;
     }
     .nav-wrap.container {
@@ -41,8 +47,10 @@
       padding: 1rem 2rem;
     }
     .glass-footer {
-      background-color: #111;
-      color: #eee;
+      backdrop-filter: blur(10px);
+      background-color: rgba(33, 33, 33, 0.9);
+      color: #ccc;
+      box-shadow: 0 -1px 8px rgba(0, 0, 0, 0.2);
       padding: 3rem 2rem;
       font-size: 0.9rem;
     }
@@ -58,20 +66,29 @@
       flex: 1 1 200px;
       min-width: 200px;
     }
-    .glass-footer h4, .glass-footer h5 {
+    .glass-footer h4,
+    .glass-footer h5 {
       margin-bottom: 1rem;
       font-family: 'Playfair Display', serif;
       font-weight: 700;
       color: #fff;
     }
-    .glass-footer a {
-      color: #eee;
-      text-decoration: none;
-      display: block;
+    .glass-footer ul {
+      list-style: none;
+      padding: 0;
+    }
+    .glass-footer li {
       margin-bottom: 0.5rem;
+    }
+    .glass-footer a,
+    .glass-footer p {
+      color: #ccc;
+      text-decoration: none;
       transition: color 0.3s ease;
     }
-    .glass-footer a:hover {
+    .glass-footer a:hover,
+    .glass-footer p:hover {
+      transition: color 0.3s ease;
       color: #cc0000;
       text-decoration: underline;
     }
@@ -94,7 +111,7 @@
   <div class="nav-wrap container">
     <a class="brand" href="index.html"><span class="red">Bo</span><span class="green">zail</span></a>
     <nav class="desktop-menu">
-      <a href="index.html">Home</a>
+      <a href="index.html" class="active">Home</a>
       <a href="about.html">About</a>
       <a href="products.html">Products</a>
       <a href="contact.html">Contact</a>
@@ -111,12 +128,16 @@
   </nav>
 </header>
 
-<section class="hero full-screen" style="background-image: url('assets/hero-bg.jpg');">
-  <div class="hero-overlay">
-    <div class="hero-text">
-      <h1 class="fancy-heading slide-in">Trade Without Borders</h1>
-      <p class="fade-in">Bozail connects global buyers and trusted suppliers through verified logistics and market insight.</p>
-      <a href="products.html" class="cta-btn">Explore Commodities</a>
+<section class="hero full-screen" style="background-image: url('assets/hero-bg.jpg'); background-size: cover; background-position: center;">
+  <div class="hero-overlay" style="background-color: rgba(0, 0, 0, 0.5); display: flex; align-items: center; justify-content: center; text-align: center; padding: 2rem;">
+    <div class="hero-content">
+      <h1 class="fancy-heading slide-in" style="font-size: 3rem; margin-bottom: 1rem; color: #fff;">Trade Without Borders</h1>
+      <p class="fade-in" style="font-size: 1.2rem; max-width: 600px; margin: 0 auto; color: #eee;">
+        Bozail connects global buyers and trusted suppliers through verified logistics and market insight.
+      </p>
+      <a href="products.html" class="cta-btn" style="display: inline-block; padding: 0.8rem 2rem; background-color: #cc0000; color: #fff; text-decoration: none; border-radius: 5px; margin-top: 2rem; font-weight: bold;">
+        Explore Commodities
+      </a>
     </div>
   </div>
 </section>
@@ -124,47 +145,46 @@
 <!-- ▸ Solutions grid -->
 <section class="solutions-strip" data-aos="fade-up">
   <div class="container solutions-grid">
-    <article class="sol-card">
-      <img src="assets/agri.jpg" alt="Agricultural Supply">
-      <h3>Agricultural Supply</h3>
-      <p>Rice, corn, beans, lentils &amp; specialty grains sourced directly from farms and cooperatives.</p>
-      <a href="products.html#grains" class="link-cta">Explore Grains</a>
+    <article class="sol-card" style="background-color: #f9f9f9; padding: 2rem; border-radius: 10px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">
+      <img src="assets/agri.jpg" alt="Agricultural Supply" style="max-width: 100%; height: auto; border-radius: 8px;">
+      <h3 style="font-size: 1.5rem; margin-top: 1rem; color: #333;">Agricultural Supply</h3>
+      <p style="color: #555;">Rice, corn, beans, lentils &amp; specialty grains sourced directly from farms and cooperatives.</p>
+      <a href="products.html#grains" class="link-cta" style="display: inline-block; margin-top: 1rem; color: #cc0000; text-decoration: none; font-weight: bold;">Explore Grains</a>
     </article>
 
-    <article class="sol-card">
-      <img src="assets/minerals.jpg" alt="Minerals & Ores">
-      <h3>Minerals &amp; Ores</h3>
-      <p>High‑grade copper ore, iron, chromite and more with full assay certificates.</p>
-      <a href="products.html#minerals" class="link-cta">Explore Minerals</a>
+    <article class="sol-card" style="background-color: #f9f9f9; padding: 2rem; border-radius: 10px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">
+      <img src="assets/minerals.jpg" alt="Minerals & Ores" style="max-width: 100%; height: auto; border-radius: 8px;">
+      <h3 style="font-size: 1.5rem; margin-top: 1rem; color: #333;">Minerals &amp; Ores</h3>
+      <p style="color: #555;">High‑grade copper ore, iron, chromite and more with full assay certificates.</p>
+      <a href="products.html#minerals" class="link-cta" style="display: inline-block; margin-top: 1rem; color: #cc0000; text-decoration: none; font-weight: bold;">Explore Minerals</a>
     </article>
 
-    <article class="sol-card">
-      <img src="assets/energy.jpg" alt="Energy Products">
-      <h3>Energy Products</h3>
-      <p>Fuel‑grade petcoke and coal, shipped in bulk with end‑to‑end logistics.</p>
-      <a href="products.html#energy" class="link-cta">Explore Energy</a>
+    <article class="sol-card" style="background-color: #f9f9f9; padding: 2rem; border-radius: 10px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease;">
+      <img src="assets/energy.jpg" alt="Energy Products" style="max-width: 100%; height: auto; border-radius: 8px;">
+      <h3 style="font-size: 1.5rem; margin-top: 1rem; color: #333;">Energy Products</h3>
+      <p style="color: #555;">Fuel‑grade petcoke and coal, shipped in bulk with end‑to‑end logistics.</p>
+      <a href="products.html#energy" class="link-cta" style="display: inline-block; margin-top: 1rem; color: #cc0000; text-decoration: none; font-weight: bold;">Explore Energy</a>
     </article>
   </div>
 </section>
 
-<section class="section-features">
-  <div class="container">
-    <h2 class="fancy-heading section-title">What Makes Us Different</h2>
-    <div class="features-grid">
-      <div class="feature-card" data-aos="fade-up">
-        <img src="assets/global.svg" alt="Global Network">
-        <h3 class="fancy-heading">Global Network</h3>
-        <p>We partner with 100+ trusted clients and brokers worldwide.</p>
+<section class="section-features" style="background-color: #f2f2f2; padding: 5rem 2rem;">
+  <div class="container" style="max-width: 1200px; margin: 0 auto;">
+    <h2 class="fancy-heading section-title" style="text-align: center; font-size: 2.5rem; margin-bottom: 3rem; color: #222;">What Makes Us Different</h2>
+    <div class="features-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem;">
+      <div class="feature-card" data-aos="fade-up" style="background-color: #fff; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); text-align: center; transition: transform 0.3s ease;">
+        <img src="assets/global.svg" alt="Global Network" style="max-width: 100px; height: auto; margin-bottom: 1rem;">
+        <h3 class="fancy-heading" style="font-size: 1.8rem; margin-bottom: 1rem; color: #333;">Global Network</h3>
+        <p style="color: #555; font-size: 1.1rem;">We partner with 100+ clients & brokers, worldwide.</p>
+        <a href="#" class="link-cta" style="display: inline-block; margin-top: 1rem; color: #cc0000; text-decoration: none; font-weight: bold;">Learn More</a>
       </div>
-      <div class="feature-card" data-aos="fade-up">
-        <img src="assets/verified.svg" alt="Verified Fulfillment">
-        <h3 class="fancy-heading">Verified Fulfillment</h3>
-        <p>Transparent pricing, real-time commodity tracking, and quality checks.</p>
+      <div class="feature-card" data-aos="fade-up" style="background-color: #fff; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); text-align: center; transition: transform 0.3s ease;">
+        <img src="assets/verified.svg" alt="Verified Fulfillment" style="max-width: 100px; height: auto; margin-bottom: 1rem;">
+        <h3 class="fancy-heading" style="font-size: 1.8rem; margin-bottom: 1rem; color: #333;">Verified Fulfillment</h3>
+        <p style="color: #555; font-size: 1.1rem;">Transparent pricing, real-time commodity tracking, and quality checks.</p>
+        <a href="#" class="link-cta" style="display: inline-block; margin-top: 1rem; color: #cc0000; text-decoration: none; font-weight: bold;">Our Process</a>
       </div>
-      <div class="feature-card" data-aos="fade-up">
-        <img src="assets/logistics.svg" alt="Logistics">
-        <h3 class="fancy-heading">Smart Logistics</h3>
-        <p>We handle shipping, warehousing, inspection, and documentation.</p>
+      <div class="feature-card" data-aos="fade-up" style="background-color: #fff; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0
       </div>
     </div>
   </div>
@@ -416,6 +436,12 @@
   const b = document.getElementById('burger');
   const d = document.getElementById('mobileDrawer');
   b?.addEventListener('click',()=>{b.classList.toggle('open');d.classList.toggle('show')});
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const header = document.querySelector('.sticky-header');
+    const hero = document.querySelector('.hero');
+  });
 </script>
 </body>
 </html>
